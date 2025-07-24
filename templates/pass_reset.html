@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>password reset</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+password reset<br>
+<input type="email" name="email" autocomplete="email" maxlength="254" required="" id="id_email">
+<input type="submit" value="Reset my password">
+    </form>
+
+</body>
+</html>
